@@ -18,6 +18,45 @@ Current build status
 
 
 <table>
+    
+  <tr>
+    <td>Azure</td>
+    <td>
+      <details>
+        <summary>
+          <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=26310&branchName=main">
+            <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/cuda-ctadvisor-feedstock?branchName=main">
+          </a>
+        </summary>
+        <table>
+          <thead><tr><th>Variant</th><th>Status</th></tr></thead>
+          <tbody><tr>
+              <td>linux_64</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=26310&branchName=main">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/cuda-ctadvisor-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>linux_aarch64</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=26310&branchName=main">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/cuda-ctadvisor-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_aarch64_" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>win_64</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=26310&branchName=main">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/cuda-ctadvisor-feedstock?branchName=main&jobName=win&configuration=win%20win_64_" alt="variant">
+                </a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </details>
+    </td>
+  </tr>
 </table>
 
 Current release info
@@ -25,7 +64,7 @@ Current release info
 
 | Name | Downloads | Version | Platforms |
 | --- | --- | --- | --- |
-| [![Conda Recipe](https://img.shields.io/badge/recipe-cuda--ctadvisor--split-green.svg)](https://anaconda.org/conda-forge/cuda-ctadvisor-split) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/cuda-ctadvisor-split.svg)](https://anaconda.org/conda-forge/cuda-ctadvisor-split) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/cuda-ctadvisor-split.svg)](https://anaconda.org/conda-forge/cuda-ctadvisor-split) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/cuda-ctadvisor-split.svg)](https://anaconda.org/conda-forge/cuda-ctadvisor-split) |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-cuda--ctadvisor-green.svg)](https://anaconda.org/conda-forge/cuda-ctadvisor) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/cuda-ctadvisor.svg)](https://anaconda.org/conda-forge/cuda-ctadvisor) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/cuda-ctadvisor.svg)](https://anaconda.org/conda-forge/cuda-ctadvisor) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/cuda-ctadvisor.svg)](https://anaconda.org/conda-forge/cuda-ctadvisor) |
 
 Installing cuda-ctadvisor
 =========================
@@ -37,41 +76,41 @@ conda config --add channels conda-forge
 conda config --set channel_priority strict
 ```
 
-Once the `conda-forge` channel has been enabled, `cuda-ctadvisor-split` can be installed with `conda`:
+Once the `conda-forge` channel has been enabled, `cuda-ctadvisor` can be installed with `conda`:
 
 ```
-conda install cuda-ctadvisor-split
-```
-
-or with `mamba`:
-
-```
-mamba install cuda-ctadvisor-split
-```
-
-It is possible to list all of the versions of `cuda-ctadvisor-split` available on your platform with `conda`:
-
-```
-conda search cuda-ctadvisor-split --channel conda-forge
+conda install cuda-ctadvisor
 ```
 
 or with `mamba`:
 
 ```
-mamba search cuda-ctadvisor-split --channel conda-forge
+mamba install cuda-ctadvisor
+```
+
+It is possible to list all of the versions of `cuda-ctadvisor` available on your platform with `conda`:
+
+```
+conda search cuda-ctadvisor --channel conda-forge
+```
+
+or with `mamba`:
+
+```
+mamba search cuda-ctadvisor --channel conda-forge
 ```
 
 Alternatively, `mamba repoquery` may provide more information:
 
 ```
 # Search all versions available on your platform:
-mamba repoquery search cuda-ctadvisor-split --channel conda-forge
+mamba repoquery search cuda-ctadvisor --channel conda-forge
 
-# List packages depending on `cuda-ctadvisor-split`:
-mamba repoquery whoneeds cuda-ctadvisor-split --channel conda-forge
+# List packages depending on `cuda-ctadvisor`:
+mamba repoquery whoneeds cuda-ctadvisor --channel conda-forge
 
-# List dependencies of `cuda-ctadvisor-split`:
-mamba repoquery depends cuda-ctadvisor-split --channel conda-forge
+# List dependencies of `cuda-ctadvisor`:
+mamba repoquery depends cuda-ctadvisor --channel conda-forge
 ```
 
 
